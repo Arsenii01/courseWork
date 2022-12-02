@@ -1,0 +1,37 @@
+.benefit {
+   color: #000;
+
+   &__wrapper {
+      display: flex;
+      align-items: center;
+
+      i {
+         font-size: 32px;
+         margin-right: 10px;
+      }
+   }
+
+   &__title {
+      text-transform: uppercase;
+   }
+
+   &__descr {
+      margin-top: 10px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .benefit {
+      &__wrapper {
+         justify-content: center;
+
+         i {
+            font-size: 24px;
+         }
+      }
+
+      &__descr {
+         text-align: center;
+      }
+   }
+}

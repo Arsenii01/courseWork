@@ -1,0 +1,62 @@
+.new {
+   width: 100%;
+   cursor: pointer;
+
+   img {
+      width: 100%;
+      border-radius: 5px;
+   }
+
+   &__title {
+      margin-top: 24px;
+      text-transform: uppercase;
+   }
+
+   &__descr {
+      margin-top: 10px;
+
+      white-space: pre-line;
+   }
+
+   .btn-to {
+      margin-top: 24px;
+
+      .btn {
+         border-radius: 5px 0 0 5px;
+      }
+
+      i {
+         border-radius: 0 5px 5px 0;
+      }
+   }
+}
+
+@media screen and (max-width: 1400px) {
+   .new {
+      .btn-to {
+         .btn_main {
+            width: 80%;
+         }
+
+         i {
+            width: 20%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 850px) {
+   .new {
+      &__title {
+         margin-top: 16px;
+      }
+
+      &__descr {
+         margin-top: 6px;
+      }
+
+      .btn-to {
+         margin-top: 16px;
+      }
+   }
+}

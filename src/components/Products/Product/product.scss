@@ -1,0 +1,66 @@
+@import '../../../styles/vars.scss';
+
+.product {
+   border-radius: 10px;
+   padding: 20px;
+   position: relative;
+   border: 1px solid rgb(138, 138, 138);
+
+   &:hover,
+   &.active {
+      background-color: $main-color;
+   }
+
+   &__wrapper {
+      color: #000;
+      display: flex;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+   }
+
+   &__descr {
+      margin-top: 10px;
+   }
+
+   img {
+      border-radius: 10px;
+      height: 15vw;
+      z-index: -1;
+   }
+
+   .btn-to {
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 1100px) {
+   .product {
+      img {
+         height: 20vw;
+      }
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .product {
+      img {
+         height: 23vw;
+      }
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .product {
+      padding: 10px;
+      img {
+         height: 27vw;
+      }
+   }
+}

@@ -1,0 +1,29 @@
+.icon-info {
+   display: grid;
+   gap: 10px;
+   justify-items: center;
+   align-items: center;
+
+   i {
+      font-size: 40px;
+   }
+
+   img {
+      height: 80px;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   p {
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .icon-info {
+      gap: 6px;
+   }
+}
